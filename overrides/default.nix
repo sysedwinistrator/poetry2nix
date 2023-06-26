@@ -983,7 +983,7 @@ lib.composeManyExtensions [
         patches = [
           (pkgs.fetchpatch {
             url = "https://raw.githubusercontent.com/NixOS/nixpkgs/dd538e9aed4211008aac6b65d771470d896a6c45/pkgs/development/python-modules/jq/jq-py-setup.patch";
-            sha256 = "1x4v6w80kyzdl7pb2jkapr4q6bfw0plqcfjk9y0hfyh69r7ka6wp";
+            sha256 = "sha256-rHh4IHicoKUCkHYX0cONCS0wn+OPsdcOCMLPVnYhBtk=";
           })
         ];
       });
