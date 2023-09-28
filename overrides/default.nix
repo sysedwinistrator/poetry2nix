@@ -1013,12 +1013,7 @@ lib.composeManyExtensions [
 
       jq = super.jq.overridePythonAttrs (attrs: {
         buildInputs = [ pkgs.jq ];
-        patches = [
-          (pkgs.fetchpatch {
-            url = "https://raw.githubusercontent.com/NixOS/nixpkgs/dd538e9aed4211008aac6b65d771470d896a6c45/pkgs/development/python-modules/jq/jq-py-setup.patch";
-            sha256 = "sha256-rHh4IHicoKUCkHYX0cONCS0wn+OPsdcOCMLPVnYhBtk=";
-          })
-        ];
+        patches = [];
       });
 
       jsondiff =
